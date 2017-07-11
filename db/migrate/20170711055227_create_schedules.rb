@@ -5,6 +5,7 @@ class CreateSchedules < ActiveRecord::Migration[5.1]
       t.text :description
       t.date :start_time
       t.date :end_time
+      t.string :picture
 
       t.timestamps
     end

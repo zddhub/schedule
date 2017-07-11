@@ -20,5 +20,10 @@
   <%= @schedule.end_time %>
 </p>
 
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@schedule.picture_url, width: 200) if @schedule.picture? %>
+</p>
+
 <%= link_to 'Edit', edit_schedule_path(@schedule) %> |
 <%= link_to 'Back', schedules_path %>

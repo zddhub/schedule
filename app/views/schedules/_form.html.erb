@@ -31,6 +31,11 @@
     <%= form.date_select :end_time, id: :schedule_end_time %>
   </div>
 
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :picture, id: :schedule_picture %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
